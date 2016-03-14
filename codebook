@@ -1,0 +1,13 @@
+###Code Book 
+######This code book includes information about the source data, the transformations performed after collecting the data and some information about the variables of the resulting data sets.
+
+######The source data was collected from the UCI Machine Learning Repository to complete an assignment for a Coursera course named Getting and Cleaning Data instructed by Jeff Leek. 
+######The assignment involved working with the data set and producing tidy data representation of the source data. 
+######Below is a step by step description of the actions involved to produce the final output.
+
+######Data set was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzipped into the working directory. Test and training data sets were set into data frames. Source variable names and activity labels were loaded. rbind was used to merge test and training data frames. Data frames were parsed down to only the mean and standard deviation variables. 
+######Activity labels were added for readability Data frames were merged to create one data frame that includes subjects, measurements and activities and merged data was produced. 
+######Tidy data was grouped by subject and activity in another newly created data set and mean and standard deviation was applied across the groups. Finally "calculated_tidy_data.txt" was produced.
+
+######Variables
+######subjectId: 1 to 30 each representing a participant in the study activity: the activity that the subject was doing at the time of the measurement tBodyAcc-mean-X tBodyAcc-mean-Y tBodyAcc-mean-Z tBodyAcc-std-X tBodyAcc-std-Y tBodyAcc-std-Z tGravityAcc-mean-X tGravityAcc-mean-Y tGravityAcc-mean-Z tGravityAcc-std-X tGravityAcc-std-Y tGravityAcc-std-Z tBodyAccJerk-mean-X tBodyAccJerk-mean-Y tBodyAccJerk-mean-Z tBodyAccJerk-std-X tBodyAccJerk-std-Y tBodyAccJerk-std-Z tBodyGyro-mean-X tBodyGyro-mean-Y tBodyGyro-mean-Z tBodyGyro-std-X tBodyGyro-std-Y
