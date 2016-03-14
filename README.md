@@ -1,4 +1,4 @@
-#Title:
+#Title: Getting and CLeaning Data Project readme.md file
 ###Part I - 
 ######loading packages data.table and reshape2
 ######downloading the zip file in working directory
